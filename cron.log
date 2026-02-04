@@ -1,0 +1,72 @@
+Telegram bot authorized as @g12c4_cars_bot
+2026/02/01 08:00:01 Telegram bot initialized successfully
+Navigating to search page 1: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1
+Found 1 new ads so far.
+Navigating to search page 2: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1&page=2
+Found 1 new ads so far.
+Navigating to search page 3: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1&page=3
+Found 1 new ads so far.
+
+Processing 1 new ads...
+[K[1/1] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-td-rline-oglas-49556348
+Applying filters to 1 cars...
+Rejected 1/1 reasons [Gearbox: Mehanički mjenjač (1)]
+Filters applied: 0 cars remaining.
+
+No cars matched your filters in this session.
+
+Scraping session complete!
+Telegram bot authorized as @g12c4_cars_bot
+2026/02/02 08:00:02 Telegram bot initialized successfully
+Navigating to search page 1: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1
+Found 0 new ads so far.
+Navigating to search page 2: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1&page=2
+Found 0 new ads so far.
+Navigating to search page 3: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1&page=3
+Found 1 new ads so far.
+
+Processing 1 new ads...
+[K[1/1] Scraping Detail: https://www.njuskalo.hr/auti/vw-passat-variant-2.0-tdi-bmt-oglas-49563361
+Applying filters to 1 cars...
+Rejected 1/1 reasons [Gearbox: Mehanički mjenjač (1)]
+Filters applied: 0 cars remaining.
+
+No cars matched your filters in this session.
+
+Scraping session complete!
+Telegram bot authorized as @g12c4_cars_bot
+2026/02/03 08:00:01 Telegram bot initialized successfully
+Navigating to search page 1: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1
+Found 12 new ads so far.
+Navigating to search page 2: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1&page=2
+Found 12 new ads so far.
+Navigating to search page 3: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1&page=3
+Found 12 new ads so far.
+
+Processing 12 new ads...
+[K[1/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-bmt-oglas-48948095[K[2/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-kredit-oglas-48813760[K[3/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-highline-panorama-103-kw-oglas-49554681[K[4/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-bmt-sport-1-vlasnik-servisna-veliki-servis-top-oglas-49519701[K[5/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-bmt-automatik-oglas-49399337[K[6/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-oglas-49284551[K[7/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-bmt-sport-style-oglas-49379975[K[8/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-panorama-navi-servisna-knjiga-jamstvo-oglas-49003707[K[9/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-bmt-registriran-euro-6-oglas-48431710[K[10/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-4motion-trend-fun-oglas-46812792[K[11/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-bmt-comforline-1-vlasnik-11-2014god-oglas-48995367[K[12/12] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0tdi-r-line-alu-18-mf-volan-garancija-oglas-49019848
+Applying filters to 12 cars...
+Rejected 12/12 reasons [Gearbox: Mehanički mjenjač (11), Year: 2013 (1)]
+Filters applied: 0 cars remaining.
+
+No cars matched your filters in this session.
+
+Scraping session complete!
+Telegram bot authorized as @g12c4_cars_bot
+2026/02/04 08:00:01 Telegram bot initialized successfully
+Navigating to search page 1: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1
+Found 4 new ads so far.
+Navigating to search page 2: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1&page=2
+Found 5 new ads so far.
+Navigating to search page 3: https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1&page=3
+Found 5 new ads so far.
+
+Processing 5 new ads...
+[K[1/5] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-r-line-2.0tdi-top-stanje-kao-nov-oglas-49397542[K[2/5] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-r-line-gt-dolasku-oglas-49570510[K[3/5] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-bmt-oglas-49569065[K[4/5] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-cup-oprema-servisna-knjiga-top-stanje-oglas-49585797[K[5/5] Scraping Detail: https://www.njuskalo.hr/auti/vw-tiguan-2.0-tdi-103-kw-sport-style-oglas-49568391
+Applying filters to 5 cars...
+Rejected 5/5 reasons [Gearbox: Mehanički mjenjač (5)]
+Filters applied: 0 cars remaining.
+
+No cars matched your filters in this session.
+
+Scraping session complete!

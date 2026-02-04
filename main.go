@@ -1,9 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
 	"log"
+	"os"
 	"strings"
 	"time"
 
@@ -15,7 +17,36 @@ const (
 	resultsFile   = "results.json"
 )
 
+func loadEnv() {
+	file, err := os.Open(".env")
+	if err != nil {
+		return
+	}
+	defer file.Close()
+
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := strings.TrimSpace(scanner.Text())
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+
+		parts := strings.SplitN(line, "=", 2)
+		if len(parts) == 2 {
+			key := strings.TrimSpace(parts[0])
+			value := strings.TrimSpace(parts[1])
+			os.Setenv(key, value)
+		}
+	}
+}
+
 func main() {
+	loadEnv()
+	if err := InitBot(); err != nil {
+		log.Fatalf("Failed to initialize Telegram bot: %v\n\nPlease set the following environment variables:\n  - TELEGRAM_BOT_TOKEN\n  - TELEGRAM_CHAT_ID", err)
+	}
+	log.Println("Telegram bot initialized successfully")
+
 	// 1. Load already processed URLs
 	processedURLs, err := loadProcessedURLs(processedFile)
 	if err != nil {
@@ -58,7 +89,7 @@ func main() {
 	}
 	defer context.Close()
 
-	currentSearchURL := "https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=15000&condition[used]=1&adsWithImages=1"
+	currentSearchURL := "https://www.njuskalo.hr/search/?keywords=vw+tiguan&showAllCategories=1&price[min]=10000&price[max]=20000&condition[used]=1&adsWithImages=1"
 
 	page, err := context.NewPage()
 	if err != nil {
@@ -131,17 +162,30 @@ func main() {
 	// 3. Filter Results
 	filteredResults := FilterCars(newResults)
 
-	// 4. Save Results
+	// 4. Send Telegram Notifications
+	if len(filteredResults) > 0 {
+		fmt.Printf("\nSending %d Telegram notifications...\n", len(filteredResults))
+		for i, car := range filteredResults {
+			fmt.Printf("\r\033[K[%d/%d] Sending notification: %s", i+1, len(filteredResults), car.Title)
+			if err := SendCarMessage(car); err != nil {
+				log.Printf("Error sending Telegram message for %s: %v", car.URL, err)
+			}
+			time.Sleep(1 * time.Second)
+		}
+		fmt.Println() // Newline after progress loop
+	}
+
+	// 5. Save Results
 	if err := saveResults(resultsFile, filteredResults); err != nil {
 		log.Printf("Error saving results: %v", err)
 	}
 
-	// 5. Update Processed URLs
+	// 6. Update Processed URLs
 	if err := saveProcessedURLs(processedFile, processedURLs); err != nil {
 		log.Printf("Error updating processed URLs: %v", err)
 	}
 
-	// 6. Print Results as JSON
+	// 7. Print Results as JSON
 	if len(filteredResults) > 0 {
 		fmt.Println("\nFiltered Results:")
 		finalJSON, _ := json.MarshalIndent(filteredResults, "", "  ")

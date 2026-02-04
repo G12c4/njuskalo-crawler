@@ -29,14 +29,14 @@ func FilterCars(cars []CarDetail) []CarDetail {
 
 		// 3. Year: 2014 - 2016
 		year := parseYear(car.Year)
-		if year < 2014 || year > 2016 {
+		if year < 2014 || year > 2019 {
 			reasons[fmt.Sprintf("Year: %d", year)]++
 			continue
 		}
 
 		// 4. Price: 10,000 - 15,000 EUR
 		price := parsePrice(car.Price)
-		if price < 10000 || price > 15000 {
+		if price < 10000 || price > 20000 {
 			reasons[fmt.Sprintf("Price: %d", price)]++
 			continue
 		}
